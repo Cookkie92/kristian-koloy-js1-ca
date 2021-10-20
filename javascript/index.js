@@ -20,10 +20,11 @@ fetch(
       }
 
       resaultContainer.innerHTML += `
-      <div class ="result">Name: ${games[i].title}
+      <div class ="result"><a href = ${games[i].game_url}>Name: ${games[i].title}
        Genre: ${games[i].genre}
         Platform: ${games[i].platform}
-         Description: ${games[i].short_description} </div>
+         Description: ${games[i].short_description}
+         Realease date: ${games[i].release_date} </a></div>
       `;
     }
   })

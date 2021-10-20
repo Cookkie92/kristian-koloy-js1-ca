@@ -52,7 +52,7 @@ nav li {
   background-color: grey;
   border-radius: 10px;
   padding: 20px;
-  border-top: 10px solid black;
+  border: 10px solid black;
 }
 .loading {
   border: 10px solid black;
