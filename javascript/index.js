@@ -20,11 +20,12 @@ fetch(
       }
 
       resaultContainer.innerHTML += `
-      <div class ="result"><a href = ${games[i].game_url}>Name: ${games[i].title}
-       Genre: ${games[i].genre}
-        Platform: ${games[i].platform}
-         Description: ${games[i].short_description}
-         Realease date: ${games[i].release_date} </a></div>
+      <div class ="result">
+
+      <h3>${games[i].title}</h3>
+      <div class="image" style="background-image:url(${games.thumbnail});"></div>
+
+      </div>
       `;
     }
   })
