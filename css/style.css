@@ -21,6 +21,7 @@ nav a {
 nav li {
   list-style: none;
 }
+
 .logo {
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -29,6 +30,16 @@ nav li {
 }
 .current {
   font-weight: bold;
+}
+.result {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  background-color: grey;
+  border-radius: 10px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .loading {
   border: 10px solid black;
