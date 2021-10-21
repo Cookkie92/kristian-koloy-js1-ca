@@ -24,9 +24,10 @@ fetch(
       <div class ="result">
       <div class = "inner-result">
         <h3 class="logo">${games[i].title}</h3>
-         <img class="image" src="${games[i].thumbnail}"  alt="thumbnail">
+        <img class="image" src="${games[i].thumbnail}"  alt="thumbnail">
          <p>${games[i].short_description}</p>
          ${games[i].genre}|---|${games[i].release_date}
+         <a href="${games[i].game_url}> </a>
          </div>
       </div>
       `;
