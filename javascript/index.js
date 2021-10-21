@@ -16,7 +16,7 @@ fetch(
     console.log(games);
     resaultContainer.innerHTML = "";
     for (let i = 0; i < games.length; i++) {
-      if (i === 100) {
+      if (i === 20) {
         break;
       }
 
@@ -27,7 +27,9 @@ fetch(
         <img class="image" src="${games[i].thumbnail}"  alt="thumbnail">
          <p>${games[i].short_description}</p>
          ${games[i].genre}|---|${games[i].release_date}
-         <a href="${games[i].game_url}> </a>
+         <div class="btn-container">
+            <a href="${games[i].game_url}"class="start-btn">Check it out</a>
+        </div>
          </div>
       </div>
       `;
