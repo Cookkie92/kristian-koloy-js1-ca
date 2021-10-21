@@ -1,5 +1,5 @@
 const resaultContainer = document.querySelector(".result");
-resaultContainer.innerHTML = "";
+
 fetch(
   "https://free-to-play-games-database.p.rapidapi.com/api/games?platform=pc",
   {
@@ -14,17 +14,20 @@ fetch(
   .then((data) => {
     const games = data;
     console.log(games);
+    resaultContainer.innerHTML = "";
     for (let i = 0; i < games.length; i++) {
-      if (i === 25) {
+      if (i === 100) {
         break;
       }
 
       resaultContainer.innerHTML += `
       <div class ="result">
-
-      <h3>${games[i].title}</h3>
-      <div class="image" style="background-image:url(${games.thumbnail});"></div>
-
+      <div class = "inner-result">
+        <h3 class="logo">${games[i].title}</h3>
+         <img class="image" src="${games[i].thumbnail}"  alt="thumbnail">
+         <p>${games[i].short_description}</p>
+         ${games[i].genre}|---|${games[i].release_date}
+         </div>
       </div>
       `;
     }
