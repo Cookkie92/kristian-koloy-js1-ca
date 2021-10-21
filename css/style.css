@@ -29,8 +29,9 @@ nav li {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 22px;
-  color: black;
+  color: #f3def8;
   margin: 0 auto;
+  text-align: center;
 }
 .current {
   font-weight: bold;
