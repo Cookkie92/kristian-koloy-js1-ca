@@ -1,6 +1,12 @@
 const resaultContainer = document.querySelector(".result");
 
-fetch("https://free-to-play-games-database.p.rapidapi.com/api/game?id=452", {
+const queryString = document.location.search;
+
+const params = new URLSearchParams(queryString);
+
+const id = params.get("id");
+
+fetch("https://free-to-play-games-database.p.rapidapi.com/api/game?id=" + id, {
   method: "GET",
   headers: {
     "x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com",
