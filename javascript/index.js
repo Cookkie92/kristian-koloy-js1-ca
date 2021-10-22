@@ -19,7 +19,7 @@ fetch(
       if (i === 20) {
         break;
       }
-
+      //fjerna noen details så details sidå kan verr litt bedre
       resaultContainer.innerHTML += `
       <div class ="result">
       <a href="details.html?id=${games[i].id}">
