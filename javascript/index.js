@@ -22,19 +22,24 @@ fetch(
 
       resaultContainer.innerHTML += `
       <div class ="result">
+      <a href="index.html">
       <div class = "inner-result">
-        <h3 class="logo">${games[i].title}</h3>
+       
         <img class="image" src="${games[i].thumbnail}"  alt="thumbnail">
+        <h3 class="logo">${games[i].title}</h3>
          <p>${games[i].short_description}</p>
          ${games[i].genre}|---|${games[i].release_date}
-         <div class="btn-container">
-            <a href="${games[i].game_url}"class="start-btn">Check it out</a>
-        </div>
+        
          </div>
+         </a>
       </div>
+      
       `;
     }
   })
   .catch((err) => {
     console.error(err);
   });
+//  <div class="btn-container">
+//     <a href="${games[i].game_url}"class="start-btn">Check it out</a>
+// </div>
