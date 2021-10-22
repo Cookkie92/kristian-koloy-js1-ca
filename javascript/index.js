@@ -22,13 +22,14 @@ fetch(
 
       resaultContainer.innerHTML += `
       <div class ="result">
-      <a href="index.html">
+      <a href="details.html?id=${games[i].id}">
       <div class = "inner-result">
        
         <img class="image" src="${games[i].thumbnail}"  alt="thumbnail">
         <h3 class="logo">${games[i].title}</h3>
-         <p>${games[i].short_description}</p>
-         ${games[i].genre}|---|${games[i].release_date}
+         <div><p>${games[i].short_description}</p></div>
+         <div><p>Genre: ${games[i].genre}</p></div>
+          Release: <time>${games[i].release_date}</time>
         
          </div>
          </a>
