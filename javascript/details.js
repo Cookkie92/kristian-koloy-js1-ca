@@ -1,4 +1,4 @@
-const resaultContainer = document.querySelector(".result");
+const detailsContainer = document.querySelector(".details-result");
 
 const queryString = document.location.search;
 
@@ -14,27 +14,31 @@ fetch("https://free-to-play-games-database.p.rapidapi.com/api/game?id=" + id, {
   },
 })
   .then((response) => response.json())
-  .then((data) => {
-    resaultContainer.innerHTML = "";
-    const games = data;
 
-    resaultContainer.innerHTML += `
-      <div class ="result">
-      <a href="details.html?id=${games.id}">
-      <div class = "inner-result">
-       
-        <img class="image" src="${games.thumbnail}"  alt="thumbnail">
+  .then((data) => {
+    detailsContainer.innerHTML = "";
+    const games = data;
+    detailsContainer.innerHTML += `
+      <div class="details-result">
+      <div class="btn-container">
+          <a href="index.html" class="start-btn"><--- Go Back</a>
+      </div>
+       <img class="details-image" src="${games.thumbnail}"  alt="thumbnail">
         <h3 class="logo">${games.title}</h3>
-         <div><p>${games.short_description}</p></div>
-         <div><p>Genre: ${games.genre}</p></div>
+                    <h4>Description:</h4>
+         <p>${games.short_description}</p>
+         <p>Genre: ${games.genre}</p>
           Release: <time>${games.release_date}</time>
-        
-         </div>
-         </a>
+
+          <div class="btn-container">
+          <a href="${games.game_url}" class="start-btn">Play It Now</a>
       </div>
       
+         </div>
+        
+      
       `;
-    console.log(data);
+    console.log(games);
   })
   .catch((err) => {
     console.error(err);

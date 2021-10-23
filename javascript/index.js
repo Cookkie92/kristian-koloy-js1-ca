@@ -27,10 +27,6 @@ fetch(
        
         <img class="image" src="${games[i].thumbnail}"  alt="thumbnail">
         <h3 class="logo">${games[i].title}</h3>
-         <div><p>${games[i].short_description}</p></div>
-         <div><p>Genre: ${games[i].genre}</p></div>
-          Release: <time>${games[i].release_date}</time>
-        
          </div>
          </a>
       </div>
