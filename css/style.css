@@ -124,3 +124,21 @@ nav a:hover {
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 768px) {
+  .nav-links {
+    margin: 10px;
+  }
+  .result {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px));
+  }
+  .inner-result {
+  }
+  .image {
+  }
+}
+
+@media (max-width: 380px) {
+}
