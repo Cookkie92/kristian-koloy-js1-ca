@@ -16,7 +16,7 @@ fetch(
     console.log(games);
     resaultContainer.innerHTML = "";
     for (let i = 0; i < games.length; i++) {
-      if (i === 20) {
+      if (i === 60) {
         break;
       }
       //fjerna noen details så details sidå kan verr litt bedre
