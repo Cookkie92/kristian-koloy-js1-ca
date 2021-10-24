@@ -126,17 +126,21 @@ nav a:hover {
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    margin: 10px;
+  .nav-links a {
+    font-size: 30px;
   }
   .result {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px));
   }
   .inner-result {
+    width: 370px;
+    height: 260px;
+  }
+  .inner-result a {
   }
   .image {
+  }
+  .logo {
+    font-size: 20px;
   }
 }
 
