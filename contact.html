@@ -25,8 +25,23 @@
       <form id="contactForm">
         <div>
           <input name="firstname" id="name" placeholder="Name" />
+          <div class="error-form" id="nameError">Required</div>
         </div>
-        <div></div>
+        <div>
+          <input name="subject" id="subject" placeholder="Subject" />
+          <div class="error-form" id="subjectError">
+            Must have atlest 10 letters.
+          </div>
+        </div>
+        <div>
+          <input name="email" id="email" placeholder="Email" />
+          <div class="error-form" id="emailError">enter Email</div>
+        </div>
+        <div>
+          <input name="adress" id="adress" placeholder="Adress" />
+          <div class="error-form" id="adressError">25 signs required</div>
+        </div>
+        <button>Submit</button>
       </form>
     </main>
     <script src="/javascript/index.js"></script>

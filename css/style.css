@@ -114,6 +114,10 @@ nav a:hover {
   font-weight: bold;
   margin-top: auto;
 }
+.error-form {
+  display: none;
+  color: red;
+}
 
 @keyframes spin {
   0% {
