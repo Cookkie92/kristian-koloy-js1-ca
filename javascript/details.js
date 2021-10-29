@@ -18,6 +18,7 @@ fetch("https://free-to-play-games-database.p.rapidapi.com/api/game?id=" + id, {
   .then((data) => {
     detailsContainer.innerHTML = "";
     const games = data;
+
     detailsContainer.innerHTML += `
       <div class="details-result">
       <div class="btn-container">
@@ -38,6 +39,7 @@ fetch("https://free-to-play-games-database.p.rapidapi.com/api/game?id=" + id, {
         
       
       `;
+
     console.log(games);
   })
   .catch((err) => {
