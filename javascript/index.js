@@ -47,6 +47,7 @@ const contactEmail = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const contactAdress = document.querySelector("#adress");
 const adressError = document.querySelector("#adressError");
+const contactSucess = document.querySelector("#sucess");
 
 function validateForm() {
   event.preventDefault();
@@ -72,6 +73,7 @@ function validateForm() {
   } else {
     emailError.style.display = "block";
   }
+  console.log();
 }
 
 form.addEventListener("submit", validateForm);
@@ -89,3 +91,11 @@ function validateEmail(email) {
   const patternMatches = regEx.test(email);
   return patternMatches;
 }
+// contactSubject.len,
+// contactAdress.len,
+// email.value
+// if (checkLength(value, len) || validateEmail(emails) === true) {
+//   contactSucess.style.display = "none";
+// } else {
+//   contactSucess.style.display = "block";
+// }
