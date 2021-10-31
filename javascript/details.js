@@ -28,7 +28,7 @@ fetch("https://free-to-play-games-database.p.rapidapi.com/api/game?id=" + id, {
       </div>
        <img class="details-image" src="${games.thumbnail}"  alt="thumbnail">
         <h3 class="logo">${games.title}</h3>
-                    <h4>Description:</h4>
+        <h4>Description:</h4>
          <p>${games.short_description}</p>
          <p>Genre: ${games.genre}</p>
           Release: <time>${games.release_date}</time>

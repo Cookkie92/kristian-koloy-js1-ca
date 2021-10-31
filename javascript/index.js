@@ -20,7 +20,7 @@ fetch(
         if (i === 60) {
           break;
         }
-        //fjerna noen details så details sidå kan verr litt bedre
+
         resaultContainer.innerHTML += `
         <div class ="result">
         <a href="details.html?id=${games[i].id}">
@@ -28,6 +28,8 @@ fetch(
          
           <img class="image" src="${games[i].thumbnail}"  alt="thumbnail">
           <h3 class="logo">${games[i].title}</h3>
+          Platform: ${games[i].platform}
+          
            </div>
            </a>
         </div>
@@ -41,15 +43,3 @@ fetch(
       `;
     }
   });
-// .catch((err) => {
-//   console.error("Error has occured", err);
-// });
-
-// contactSubject.len,
-// contactAdress.len,
-// email.value
-// if (checkLength(value, len) || validateEmail(emails) === true) {
-//   contactSucess.style.display = "none";
-// } else {
-//   contactSucess.style.display = "block";
-// }
