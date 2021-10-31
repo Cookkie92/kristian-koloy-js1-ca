@@ -35,12 +35,15 @@ fetch(
         `;
       }
     } catch (error) {
-      console.log("NONONONONON");
+      console.warn("Something went wrong", error);
+      resaultContainer.innerHTML += `
+        <h3 class="logo">Something Went Wrong!</h3>
+      `;
     }
-  })
-  .catch((err) => {
-    console.error("Error has occured", err);
   });
+// .catch((err) => {
+//   console.error("Error has occured", err);
+// });
 
 // contactSubject.len,
 // contactAdress.len,
