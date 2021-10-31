@@ -16,11 +16,12 @@ fetch("https://free-to-play-games-database.p.rapidapi.com/api/game?id=" + id, {
   .then((response) => response.json())
 
   .then((data) => {
-    detailsContainer.innerHTML = "";
-    const games = data;
-    const detailsTitle = document.querySelector("title");
-    detailsTitle.innerHTML = `${games.title}`;
-    detailsContainer.innerHTML += `
+    try {
+      detailsContainer.innerHTML = "";
+      const games = data;
+      const detailsTitle = document.querySelector("title");
+      detailsTitle.innerHTML = `${games.title}`;
+      detailsContainer.innerHTML += `
       <div class="details-result">
       <div class="btn-container">
           <a href="index.html" class="start-btn"><--- Go Back</a>
@@ -41,8 +42,11 @@ fetch("https://free-to-play-games-database.p.rapidapi.com/api/game?id=" + id, {
       
       `;
 
-    console.log(games);
-  })
-  .catch((err) => {
-    console.error(err);
+      console.log(games);
+    } catch (error) {
+      console.warn("Something Went Wrong", error);
+      detailsContainer.innerHTML += `
+      <h3 class="logo">Something Went Wrong!</h3>
+      `;
+    }
   });

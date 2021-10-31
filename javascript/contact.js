@@ -55,4 +55,34 @@ function validateEmail(email) {
   return patternMatches;
 }
 
-// console.log(nameError);
+// console.log();
+
+//lvl2 attempt
+// contactSubject.len,
+// contactAdress.len,
+// email.value
+// if (checkLength(value, len) || validateEmail(emails) === true) {
+//   contactSucess.style.display = "none";
+// } else {
+//   contactSucess.style.display = "block";
+// }
+// if(validateForm(value,len)) === true{
+//   contactSucess.style.display = "none";
+// } else{
+//   contactSucess.style.display = "block";
+// }
+
+// if (
+//   checkLength(
+//     contactName.value,
+//     contactSubject.value,
+//     contactAdress.value,
+//     len
+//   ) === true
+// ) {
+//   contactSucess.style.display = "none";
+// } else {
+//   contactSucess.style.display = "block";
+// }
+
+//NOPE
