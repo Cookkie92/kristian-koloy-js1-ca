@@ -85,4 +85,16 @@ function validateEmail(email) {
 //   contactSucess.style.display = "block";
 // }
 
+// if (
+//   validateForm(
+//     contactName.len,
+//     contactSubject.len,
+//     contactAdress.len,
+//     email.value
+//   ) === true
+// ) {
+//   contactSucess.style.display = "none";
+// } else {
+//   contactSucess.style.display = "block";
+// }
 //NOPE
