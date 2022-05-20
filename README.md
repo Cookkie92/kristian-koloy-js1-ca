@@ -1,55 +1,36 @@
 # Javascript CA 1
-
-A project in wich i created a website that connects to an API to show the users Top free games to play for PC
+A site showing top free pc games and a contact page.
 
 # Description
-
-Add a more detailed description of what your project entails and set out to do.
-
-You can add some bullet points if you'd like to:
-
-List item 1
-List item 2
-List item 3
-
+This is a Javascript Course Assignment i had for school, in wich i created a website that fetches all its content from an API to show the Top free games to play for PC.
+On this site ive created a layout that is easy to navigate and also there color schemes pop out to make the website stand out.
+There is also a contact page in wich the user must input correct number of letters and a email into the contact submit form.
 # Built With
-
-You can list a the tech stack that you've used over here
-
-React.js
-Bootstrap
+-HTML
+-CSS
+-Javascript
 
 # Getting Started
+If you want to clone my repo and work on my site you are free to do so.
 
-Installing
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
+Clone the repo: git clone https://github.com/Cookkie92/Games-shop-site.git
 
-Clone the repo:
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
 Install the dependencies:
-npm install
-Running
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
 
-To run the app, run the following commands:
-
-npm run start
+-There are no dependencies on this website.
 
 # Contributing
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate CONTRIBUTING.md and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+All games displayed on this site is fetched from RapidAPI.com
+
 
 # Contact
+My discord: cookiekk#0684
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+My LinkedIn page: https://www.linkedin.com/in/kristian-koloey-659b61a5/
 
-My Twitter page
-
-My LinkedIn page
-
-License
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
 
 # Acknowledgments
+Noroff school of technology has tought me most of the code i wrote for this project. I have also used Stackoverflow.com alot to figure out problems i had with my code. Ive looked at a heap of youtube videos for inspiration.
+And ive used RapidAPI.com to fetch the API containing the top free games to play for PC.
 
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
