@@ -13,7 +13,7 @@ There is also a contact page in wich the user must input correct number of lette
 # Getting Started
 If you want to clone my repo and work on my site you are free to do so.
 
-Clone the repo: git clone https://github.com/Cookkie92/Games-shop-site.git
+Clone the repo: git clone https://github.com/Cookkie92/kristian-koloy-js1-ca.git
 
 Install the dependencies:
 
