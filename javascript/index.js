@@ -17,6 +17,7 @@ fetch(
       console.log(games);
       resaultContainer.innerHTML = "";
       for (let i = 0; i < games.length; i++) {
+        console.log(games.length);
         if (i === 60) {
           break;
         }
